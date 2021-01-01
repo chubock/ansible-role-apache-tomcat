@@ -1,4 +1,5 @@
 ---
 - hosts: tomcat
+  become: true
   roles:
     - { role: chubock.apache_tomcat, java_home: /opt/java/default, catalina_home: /opt/tomcat/default}
