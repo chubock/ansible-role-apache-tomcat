@@ -5,7 +5,7 @@
 
 - name: check {{ catalina_home }} directory existense
   file:
-    path: '{{ catalina_path }}'
+    path: '{{ catalina_home }}'
     state: directory
 
 - name: unarchive apache-tomcat package
